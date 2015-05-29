@@ -10,7 +10,7 @@ fn main() {
 }
 
 fn is_five_somewhere(time: &NaiveTime) -> bool {
-    let max_difference = Duration::minutes(5);
+    let max_difference = Duration::minutes(10);
     let target_time = NaiveTime::from_hms(17, 0, 0);
     let offsets = [
         Duration::minutes(-(12 * 60)),
